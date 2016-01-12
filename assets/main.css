@@ -5837,3 +5837,9 @@ button.close {
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc; }
+
+.manufacturer p {
+  margin-top: 5px; }
+
+.manufacturer img {
+  max-height: 60px; }
