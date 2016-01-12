@@ -5817,6 +5817,9 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.list-group-item {
+  padding: 8px 12px; }
+
 .list-group-item--heating {
   color: #a94442;
   background-color: #f2dede; }
@@ -5828,10 +5831,6 @@ button.close {
 .list-group-item--cooling {
   color: #31708f;
   background-color: #d9edf7; }
-
-.list-group-item__logo {
-  width: 30px;
-  float: left; }
 
 .alert--photos {
   color: #8a6d3b;
@@ -5845,4 +5844,4 @@ button.close {
   margin-top: 5px; }
 
 .manufacturer img {
-  max-height: 60px; }
+  max-height: 50px; }
