@@ -1,0 +1,23 @@
+
+// title bar
+$navbar-default-bg: #3c3c3c;
+$navbar-border-radius: 0;
+$navbar-default-link-color: #fff;
+
+
+@import "bootstrap";
+
+.list-group-item--heating {
+  color: #a94442;
+  background-color: #f2dede;
+}
+
+.list-group-item--eco {
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+
+.list-group-item--cooling {
+  color: #31708f;
+  background-color: #d9edf7;
+}
