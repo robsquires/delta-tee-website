@@ -5833,10 +5833,13 @@ button.close {
   width: 30px;
   float: left; }
 
-.alert--download {
+.alert--photos {
   color: #8a6d3b;
   background-color: #fcf8e3;
-  border-color: #faebcc; }
+  border-color: #faebcc;
+  margin-top: 20px; }
+  .alert--photos a {
+    color: #8a6d3b; }
 
 .manufacturer p {
   margin-top: 5px; }
