@@ -5845,3 +5845,9 @@ button.close {
 
 .manufacturer img {
   max-height: 50px; }
+
+.profile img {
+  width: 110px; }
+
+.profile p {
+  margin-top: 10px; }
