@@ -7,6 +7,8 @@ $navbar-default-link-color: #fff;
 
 @import "bootstrap";
 
+// products
+
 .list-group-item--heating {
   color: #a94442;
   background-color: #f2dede;
@@ -20,4 +22,16 @@ $navbar-default-link-color: #fff;
 .list-group-item--cooling {
   color: #31708f;
   background-color: #d9edf7;
+}
+
+.list-group-item__logo {
+    width:30px;
+    float:left;
+}
+
+// alerts
+.alert--download {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
 }
