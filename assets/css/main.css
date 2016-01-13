@@ -5930,6 +5930,9 @@ button.list-group-item-snapshot {
 .manufacturer img {
   max-height: 50px; }
 
+.manufacturer.airius img {
+  max-height: 40px; }
+
 .profile img {
   width: 140px;
   margin: 0 auto;
