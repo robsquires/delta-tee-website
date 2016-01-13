@@ -12,11 +12,16 @@ $list-group-border: #ccc;
 
 
 
-
+// boostrap overrides
 
 .panel {
     border:0;
     box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px, rgba(0, 0, 0, 0.14902) 0px 1px 10px 0px;
+}
+
+.col-md-3 {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 // products
@@ -47,7 +52,7 @@ $list-group-border: #ccc;
   background-color: #fcf8e3;
   border-color: #faebcc;
   margin-top: 20px;
-  padding: 8px 8px;
+  padding: 8px 10px;
   a {
     color: #8a6d3b;
     &:hover,
@@ -73,17 +78,21 @@ $list-group-border: #ccc;
   }
   
   img {
-    max-height: 50px;
+    max-height: 35px;
   }
   
   &.airius {
     img {
-      max-height: 40px;
+      max-height: 25px;
     }
   }
 }
 
 //thanks column
+
+.thanks {
+    text-align: center;
+}
 
 .profile {
   img {
