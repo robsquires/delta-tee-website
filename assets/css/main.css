@@ -5977,21 +5977,24 @@ button.list-group-item-snapshot {
     font-weight: bolder; }
 
 .signature {
-  height: 118px; }
+  height: 100px; }
+  .signature img {
+    margin: 0 auto;
+    max-width: 230px; }
 
 .associations {
   overflow: hidden;
-  max-width: 231px;
+  max-width: 200px;
   margin: 0 auto; }
   .associations .cibse img {
-    max-height: 45px; }
+    max-height: 50px; }
   .associations .imeche img {
-    margin-left: 5px;
-    max-height: 31px; }
+    margin-left: 10px;
+    max-height: 25px; }
   .associations .maa img {
-    margin-left: 5px;
-    max-height: 31px; }
+    margin-left: 10px;
+    max-height: 20px; }
   .associations .deltatee {
-    margin-top: 2px;
-    margin-left: 5px;
-    font-size: 10px; }
+    margin-top: 7px;
+    margin-left: 12px;
+    font-size: 16px; }
