@@ -4539,7 +4539,7 @@ a.thumbnail.active {
   padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid #ddd; }
+  border: 1px solid #ccc; }
   .list-group-item:first-child {
     border-top-right-radius: 4px;
     border-top-left-radius: 4px; }
@@ -4909,18 +4909,18 @@ button.list-group-item-danger {
       border-bottom: 1px solid #ddd; }
 
 .panel-default {
-  border-color: #ddd; }
+  border-color: #ccc; }
   .panel-default > .panel-heading {
     color: #333333;
     background-color: #f5f5f5;
-    border-color: #ddd; }
+    border-color: #ccc; }
     .panel-default > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: #ddd; }
+      border-top-color: #ccc; }
     .panel-default > .panel-heading .badge {
       color: #f5f5f5;
       background-color: #333333; }
   .panel-default > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #ddd; }
+    border-bottom-color: #ccc; }
 
 .panel-primary {
   border-color: #337ab7; }
@@ -5817,6 +5817,10 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.panel {
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px, rgba(0, 0, 0, 0.14902) 0px 1px 10px 0px; }
+
 .list-group-item {
   padding: 8px 8px; }
 
@@ -5912,17 +5916,33 @@ button.list-group-item-snapshot {
     background-color: #8a6d3b;
     border-color: #8a6d3b; }
 
-.alert--photos {
+.alert--photos,
+.alert--email,
+.alert--linkedin {
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc;
+  margin-top: 20px;
+  padding: 8px 8px;
   margin-top: 20px; }
-  .alert--photos a {
+  .alert--photos a,
+  .alert--email a,
+  .alert--linkedin a {
     color: #8a6d3b; }
-    .alert--photos a:hover, .alert--photos a:focus {
+    .alert--photos a:hover, .alert--photos a:focus,
+    .alert--email a:hover,
+    .alert--email a:focus,
+    .alert--linkedin a:hover,
+    .alert--linkedin a:focus {
       text-decoration: none; }
-  .alert--photos:hover {
+  .alert--photos:hover,
+  .alert--email:hover,
+  .alert--linkedin:hover {
     background-color: #faf2cc; }
+  .alert--photos .glyphicon,
+  .alert--email .glyphicon,
+  .alert--linkedin .glyphicon {
+    font-size: 1.2em; }
 
 .manufacturer p {
   margin-top: 5px; }
@@ -5942,9 +5962,6 @@ button.list-group-item-snapshot {
   margin-top: 10px; }
   .profile p a {
     font-weight: bolder; }
-
-.email {
-  margin-top: 20px; }
 
 .associations .cibse img {
   max-height: 65px; }

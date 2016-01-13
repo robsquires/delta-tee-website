@@ -4,8 +4,20 @@ $navbar-default-bg: #3c3c3c;
 $navbar-border-radius: 0;
 $navbar-default-link-color: #fff;
 
+$panel-default-border: #ccc;
+$list-group-border: #ccc;
+
 
 @import "bootstrap";
+
+
+
+
+
+.panel {
+    border:0;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px, rgba(0, 0, 0, 0.14902) 0px 1px 10px 0px;
+}
 
 // products
 
@@ -27,11 +39,15 @@ $navbar-default-link-color: #fff;
 
 
 // alerts
-.alert--photos {
+.alert--photos,
+.alert--email,
+.alert--linkedin
+ {
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc;
   margin-top: 20px;
+  padding: 8px 8px;
   a {
     color: #8a6d3b;
     &:hover,
@@ -42,6 +58,11 @@ $navbar-default-link-color: #fff;
   
   &:hover {
     background-color: darken(#fcf8e3, 5%);
+  }
+  
+  margin-top: 20px;
+  .glyphicon {
+    font-size: 1.2em;
   }
 }
 
@@ -78,10 +99,6 @@ $navbar-default-link-color: #fff;
       font-weight: bolder;
     }
   }
-}
-
-.email {
-    margin-top: 20px;
 }
 
 .associations {
