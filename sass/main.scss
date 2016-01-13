@@ -10,7 +10,7 @@ $navbar-default-link-color: #fff;
 // products
 
 .list-group-item {
-    padding: 8px 12px;
+    padding: 8px 8px;
 
 }
 
@@ -18,47 +18,14 @@ $navbar-default-link-color: #fff;
 // does for the default hover state
 // + don't want to use !important
 
-a.list-group-item--heating {
-  background-color: #f2dede;
-  color: #a94442;
-
-  &:hover {
-    background-color: #ebcccc;
-    color: #a94442;
-  }
-}
-
-
-a.list-group-item--eco {
-  background-color: #dff0d8;
-  color: #3c763d;
-
-  &:hover {
-    background-color: #d0e9c6;
-    color: #3c763d;
-  }
-}
-
-a.list-group-item--cooling {
-  background-color: #d9edf7;
-  color: #31708f;
-
-  &:hover {
-    background-color: #c4e3f3;
-    color: #31708f;
-  }
-}
+@include list-group-item-variant(heating, #f2dede, #a94442);
+@include list-group-item-variant(eco,  #dff0d8, #3c763d);
+@include list-group-item-variant(cooling, #d9edf7, #31708f);
 
 // snapshot download
-a.list-group-item--snapshot {
-  background-color: #fcf8e3;
-  color: #8a6d3b;
+@include list-group-item-variant(snapshot, #fcf8e3, #8a6d3b);
 
-  &:hover {
-    background-color: #faf2cc;
-    color: #8a6d3b;
-  }
-}
+
 
 // alerts
 .alert--photos {
