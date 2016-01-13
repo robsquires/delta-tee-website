@@ -5977,10 +5977,13 @@ button.list-group-item-snapshot {
     font-weight: bolder; }
 
 .signature {
-  height: 110px; }
+  height: 110px;
+  margin: 0 auto; }
   .signature img {
-    margin: 12px auto;
-    max-width: 230px; }
+    display: block;
+    padding-top: 25px;
+    margin: 0 auto;
+    max-width: 200px; }
 
 .associations {
   overflow: hidden;

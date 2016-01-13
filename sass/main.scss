@@ -122,11 +122,16 @@ $list-group-border: #ccc;
 
 .signature {
     height: 110px;
+    margin: 0 auto;
+    
     img {
-        margin: 12px auto;
-        max-width: 230px;
+        display: block;
+        padding-top: 25px;
+        margin: 0 auto;
+        max-width: 200px;
     }
 }
+
 .associations {
     
     overflow: hidden;
