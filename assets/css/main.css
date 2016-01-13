@@ -5931,7 +5931,27 @@ button.list-group-item-snapshot {
   max-height: 50px; }
 
 .profile img {
-  width: 110px; }
+  width: 140px;
+  margin: 0 auto;
+  display: block; }
 
 .profile p {
   margin-top: 10px; }
+  .profile p a {
+    font-weight: bolder; }
+
+.email {
+  margin-top: 20px; }
+
+.associations .cibse img {
+  max-height: 65px; }
+
+.associations .imeche img {
+  margin-top: 15px;
+  margin-right: 5px;
+  max-height: 27px; }
+
+.associations .maa img {
+  margin-top: 15px;
+  margin-left: 5px;
+  max-height: 27px; }

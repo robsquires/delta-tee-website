@@ -10,7 +10,7 @@ $navbar-default-link-color: #fff;
 // products
 
 .list-group-item {
-    padding: 8px 8px;
+  padding: 8px 8px;
 }
 
 // have to prefix with `a` because bootstrap
@@ -55,14 +55,43 @@ $navbar-default-link-color: #fff;
   }
 }
 
-//thanks
+//thanks column
+
 .profile {
   img {
-    width: 110px;
+    width: 140px;
+    margin: 0 auto;
+    display:block;
   }
 
   p {
-    margin-top:10px;
+    margin-top: 10px;
+
+    a {
+      font-weight: bolder;
+    }
   }
 }
 
+.email {
+    margin-top: 20px;
+}
+
+.associations {
+    
+    .cibse img {
+      max-height: 65px;
+    }
+
+    .imeche img {
+      margin-top: 15px;
+      margin-right: 5px;
+      max-height: 27px;
+    }
+
+    .maa img {
+      margin-top: 15px;
+      margin-left: 5px;
+      max-height: 27px;
+    }
+}
