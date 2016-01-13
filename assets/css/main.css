@@ -5919,6 +5919,10 @@ button.list-group-item-snapshot {
   margin-top: 20px; }
   .alert--photos a {
     color: #8a6d3b; }
+    .alert--photos a:hover, .alert--photos a:focus {
+      text-decoration: none; }
+  .alert--photos:hover {
+    background-color: #faf2cc; }
 
 .manufacturer p {
   margin-top: 5px; }
