@@ -5962,11 +5962,13 @@ button.list-group-item-snapshot {
   max-height: 25px; }
 
 .thanks {
+  margin-top: 30px;
+  display: block;
   text-align: center; }
 
 .profile img {
-  width: 140px;
-  margin: 0 auto;
+  width: 150px;
+  margin: 30px auto;
   display: block; }
 
 .profile p {
@@ -5974,15 +5976,22 @@ button.list-group-item-snapshot {
   .profile p a {
     font-weight: bolder; }
 
-.associations .cibse img {
-  max-height: 65px; }
+.signature {
+  height: 115px; }
 
-.associations .imeche img {
-  margin-top: 15px;
-  margin-right: 5px;
-  max-height: 27px; }
-
-.associations .maa img {
-  margin-top: 15px;
-  margin-left: 5px;
-  max-height: 27px; }
+.associations {
+  overflow: hidden;
+  max-width: 242px;
+  margin: 0 auto; }
+  .associations .cibse img {
+    max-height: 50px; }
+  .associations .imeche img {
+    margin-left: 5px;
+    max-height: 32px; }
+  .associations .maa img {
+    margin-left: 5px;
+    max-height: 32px; }
+  .associations .deltatee {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 10px; }

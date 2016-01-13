@@ -100,40 +100,52 @@ $list-group-border: #ccc;
 //thanks column
 
 .thanks {
+    margin-top: 30px;
+    display:block;
     text-align: center;
 }
 
 .profile {
   img {
-    width: 140px;
-    margin: 0 auto;
+    width: 150px;
+    margin: 30px auto;
     display:block;
   }
 
   p {
     margin-top: 10px;
-
     a {
       font-weight: bolder;
     }
   }
 }
 
+.signature {
+    height: 115px;
+}
 .associations {
     
+    overflow: hidden;
+    max-width: 242px;
+    margin: 0 auto;
+
     .cibse img {
-      max-height: 65px;
+      max-height: 50px;
     }
 
     .imeche img {
-      margin-top: 15px;
-      margin-right: 5px;
-      max-height: 27px;
+      margin-left: 5px;
+      max-height: 32px;
     }
 
     .maa img {
-      margin-top: 15px;
       margin-left: 5px;
-      max-height: 27px;
+      max-height: 32px;
+    }
+
+    .deltatee {
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 10px;
     }
 }
