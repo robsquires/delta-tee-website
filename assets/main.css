@@ -5820,17 +5820,33 @@ button.close {
 .list-group-item {
   padding: 8px 12px; }
 
-.list-group-item--heating {
-  color: #a94442;
-  background-color: #f2dede; }
+a.list-group-item--heating {
+  background-color: #f2dede;
+  color: #a94442; }
+  a.list-group-item--heating:hover {
+    background-color: #ebcccc;
+    color: #a94442; }
 
-.list-group-item--eco {
-  color: #3c763d;
-  background-color: #dff0d8; }
+a.list-group-item--eco {
+  background-color: #dff0d8;
+  color: #3c763d; }
+  a.list-group-item--eco:hover {
+    background-color: #d0e9c6;
+    color: #3c763d; }
 
-.list-group-item--cooling {
-  color: #31708f;
-  background-color: #d9edf7; }
+a.list-group-item--cooling {
+  background-color: #d9edf7;
+  color: #31708f; }
+  a.list-group-item--cooling:hover {
+    background-color: #c4e3f3;
+    color: #31708f; }
+
+a.list-group-item--snapshot {
+  background-color: #fcf8e3;
+  color: #8a6d3b; }
+  a.list-group-item--snapshot:hover {
+    background-color: #faf2cc;
+    color: #8a6d3b; }
 
 .alert--photos {
   color: #8a6d3b;
