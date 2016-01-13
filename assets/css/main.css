@@ -5977,21 +5977,21 @@ button.list-group-item-snapshot {
     font-weight: bolder; }
 
 .signature {
-  height: 115px; }
+  height: 118px; }
 
 .associations {
   overflow: hidden;
-  max-width: 242px;
+  max-width: 231px;
   margin: 0 auto; }
   .associations .cibse img {
-    max-height: 50px; }
+    max-height: 45px; }
   .associations .imeche img {
     margin-left: 5px;
-    max-height: 32px; }
+    max-height: 31px; }
   .associations .maa img {
     margin-left: 5px;
-    max-height: 32px; }
+    max-height: 31px; }
   .associations .deltatee {
-    margin-top: 5px;
+    margin-top: 2px;
     margin-left: 5px;
     font-size: 10px; }
