@@ -5817,6 +5817,15 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.dt-logo {
+  padding: 15px; }
+  .dt-logo img {
+    max-width: 220px; }
+    @media (max-width: 992px) {
+      .dt-logo img {
+        display: block;
+        margin: 0 auto; } }
+
 .col-md-3 {
   padding-left: 10px;
   padding-right: 10px; }
