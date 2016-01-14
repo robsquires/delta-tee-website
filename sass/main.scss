@@ -107,7 +107,7 @@ $list-group-border: #ccc;
 }
 
 .profile {
-  img {
+  .profile-pic {
     width: 150px;
     margin: 30px auto;
     display:block;
@@ -118,6 +118,13 @@ $list-group-border: #ccc;
     a {
       font-weight: bolder;
     }
+  }
+}
+
+.alert--linkedin {
+  img {
+    margin-top: 2px;
+    max-height: 14px;
   }
 }
 

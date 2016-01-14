@@ -5951,7 +5951,7 @@ button.list-group-item-snapshot {
   display: block;
   text-align: center; }
 
-.profile img {
+.profile .profile-pic {
   width: 150px;
   margin: 30px auto;
   display: block; }
@@ -5960,6 +5960,10 @@ button.list-group-item-snapshot {
   margin-top: 10px; }
   .profile p a {
     font-weight: bolder; }
+
+.alert--linkedin img {
+  margin-top: 2px;
+  max-height: 14px; }
 
 .signature {
   height: 110px;
