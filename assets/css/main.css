@@ -5817,17 +5817,35 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.panel {
-  border: 0;
-  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px, rgba(0, 0, 0, 0.14902) 0px 1px 10px 0px; }
-
 .col-md-3 {
   padding-left: 10px;
   padding-right: 10px; }
 
+@media (max-width: 992px) {
+  .col-products,
+  .col-photos,
+  .col-contact {
+    margin-top: 30px; } }
+
 .intro br {
   font-size: 10px;
   line-height: 1; }
+
+.manufacturer p {
+  margin-top: 5px; }
+
+.manufacturer img {
+  max-height: 35px; }
+
+.manufacturer.airius p {
+  margin-bottom: 0px; }
+
+.manufacturer.airius img {
+  max-height: 25px; }
+
+.panel {
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px, rgba(0, 0, 0, 0.14902) 0px 1px 10px 0px; }
 
 .list-group-item {
   padding: 8px 8px; }
@@ -5924,43 +5942,6 @@ button.list-group-item-snapshot {
     background-color: #8a6d3b;
     border-color: #8a6d3b; }
 
-.alert--photos,
-.alert--email,
-.alert--linkedin {
-  color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
-  margin-top: 20px;
-  padding: 8px 10px;
-  margin-top: 20px; }
-  .alert--photos a,
-  .alert--email a,
-  .alert--linkedin a {
-    color: #8a6d3b; }
-    .alert--photos a:hover, .alert--photos a:focus,
-    .alert--email a:hover,
-    .alert--email a:focus,
-    .alert--linkedin a:hover,
-    .alert--linkedin a:focus {
-      text-decoration: none; }
-  .alert--photos:hover,
-  .alert--email:hover,
-  .alert--linkedin:hover {
-    background-color: #faf2cc; }
-  .alert--photos .glyphicon,
-  .alert--email .glyphicon,
-  .alert--linkedin .glyphicon {
-    font-size: 1.2em; }
-
-.manufacturer p {
-  margin-top: 5px; }
-
-.manufacturer img {
-  max-height: 35px; }
-
-.manufacturer.airius img {
-  max-height: 25px; }
-
 .thanks {
   margin-top: 30px;
   display: block;
@@ -6000,3 +5981,31 @@ button.list-group-item-snapshot {
   .associations .deltatee {
     margin-top: 10px;
     margin-left: 28px; }
+
+.alert--photos,
+.alert--email,
+.alert--linkedin {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  margin-top: 20px;
+  padding: 8px 10px;
+  margin-top: 20px; }
+  .alert--photos a,
+  .alert--email a,
+  .alert--linkedin a {
+    color: #8a6d3b; }
+    .alert--photos a:hover, .alert--photos a:focus,
+    .alert--email a:hover,
+    .alert--email a:focus,
+    .alert--linkedin a:hover,
+    .alert--linkedin a:focus {
+      text-decoration: none; }
+  .alert--photos:hover,
+  .alert--email:hover,
+  .alert--linkedin:hover {
+    background-color: #faf2cc; }
+  .alert--photos .glyphicon,
+  .alert--email .glyphicon,
+  .alert--linkedin .glyphicon {
+    font-size: 1.2em; }

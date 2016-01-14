@@ -14,17 +14,23 @@ $list-group-border: #ccc;
 
 // boostrap overrides
 
-.panel {
-    border:0;
-    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px, rgba(0, 0, 0, 0.14902) 0px 1px 10px 0px;
-}
-
 .col-md-3 {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-// intro
+.col-products,
+.col-photos,
+.col-contact {
+  @media (max-width: $screen-md-min) {
+    margin-top: 30px;
+  }
+}
+
+
+// 
+// Intro column
+// 
 
 .intro {
     br {
@@ -33,7 +39,38 @@ $list-group-border: #ccc;
     }
 }
 
-// products
+// manufacturers
+.manufacturer {
+  p {
+    margin-top: 5px;
+  }
+  
+  img {
+    max-height: 35px;
+  }
+  
+  &.airius {
+    p {
+      margin-bottom: 0px;
+    }
+    
+
+    img {
+      max-height: 25px;
+    }
+  }
+}
+
+// 
+// Products column
+// 
+
+// overriding bootstrap defaults
+
+.panel {
+    border:0;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px, rgba(0, 0, 0, 0.14902) 0px 1px 10px 0px;
+}
 
 .list-group-item {
   padding: 8px 8px;
@@ -51,53 +88,9 @@ $list-group-border: #ccc;
 @include list-group-item-variant(snapshot, #fcf8e3, #8a6d3b);
 
 
-
-// alerts
-.alert--photos,
-.alert--email,
-.alert--linkedin
- {
-  color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
-  margin-top: 20px;
-  padding: 8px 10px;
-  a {
-    color: #8a6d3b;
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
-  }
-  
-  &:hover {
-    background-color: darken(#fcf8e3, 5%);
-  }
-  
-  margin-top: 20px;
-  .glyphicon {
-    font-size: 1.2em;
-  }
-}
-
-// manufacturers
-.manufacturer {
-  p {
-    margin-top: 5px;
-  }
-  
-  img {
-    max-height: 35px;
-  }
-  
-  &.airius {
-    img {
-      max-height: 25px;
-    }
-  }
-}
-
-//thanks column
+//
+//Thanks column
+//
 
 .thanks {
     margin-top: 30px;
@@ -156,4 +149,34 @@ $list-group-border: #ccc;
         margin-top: 10px;
         margin-left: 28px;
     }
+}
+
+// 
+// The CTA/alerts
+// 
+.alert--photos,
+.alert--email,
+.alert--linkedin
+ {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  margin-top: 20px;
+  padding: 8px 10px;
+  a {
+    color: #8a6d3b;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+  
+  &:hover {
+    background-color: darken(#fcf8e3, 5%);
+  }
+  
+  margin-top: 20px;
+  .glyphicon {
+    font-size: 1.2em;
+  }
 }
