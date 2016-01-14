@@ -87,6 +87,14 @@ $list-group-border: #ccc;
 // snapshot download
 @include list-group-item-variant(snapshot, #fcf8e3, #8a6d3b);
 
+// yikes! overriding instagram, this is a bit naughty but will worry when it breaks
+
+.instagram-media {
+  @media (min-width:$screen-sm-min) and (max-width: $screen-md-min)  {
+    margin: 1px auto !important;
+  }
+}
+
 
 //
 //Thanks column

@@ -5942,6 +5942,10 @@ button.list-group-item-snapshot {
     background-color: #8a6d3b;
     border-color: #8a6d3b; }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .instagram-media {
+    margin: 1px auto !important; } }
+
 .thanks {
   margin-top: 30px;
   display: block;
