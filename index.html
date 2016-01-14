@@ -49,21 +49,21 @@
             
             <!-- manufacturers -->
             <div class="row manufacturer db">
-              <a href="http://www.dunham-bush.co.uk" target="_blank">
+              <a href="http://www.dunham-bush.co.uk" target="_blank" data-tracking="manu|db" >
                 <img class="responsive-image" src="assets/dunham-bush.png"/>
               </a>
               <p><strong>Dunham-Bush</strong> is the leading UK manufacturer of heating & cooling HVAC products. <strong>Hampshire</strong> based.</p>
             </div>
             
             <div class="row manufacturer spaceray">
-              <a href="http://www.spaceray.co.uk" target="_blank">
+              <a href="http://www.spaceray.co.uk" target="_blank" data-tracking="manu|sr">
                 <img class="responsive-image" src="assets/space-ray.png"/>
               </a>
               <p><strong>Space-Ray</strong> is a major player offering gas radiant 'tubes' and 'plaques' from stock. <strong>Suffolk</strong> based.</p>
             </div>
 
             <div class="row manufacturer airius">
-              <a href="http://www.airius.co.uk" target="_blank">
+              <a href="http://www.airius.co.uk" target="_blank" data-tracking="manu|ar">
                 <img class="responsive-image" src="assets/airius.png"/>
               </a>
               <p><strong>Airius Europe</strong> offers the very latest technology in low energy thermal de-stratification. <strong>Dorset</strong> based.</p>
@@ -191,11 +191,18 @@
     </div>
     <script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
     <script type="text/javascript">
-      var trackOutboundLink = function(url) {
-         ga('send', 'event', 'outbound', 'click', url, {
-           'transport': 'beacon',
-           'hitCallback': function(){document.location = url;}
-         });
+      var elementList = document.querySelectorAll('a');
+      for (var i = 0; i < elementList.length; i++) {
+        (function(el){
+            el.onclick = function() {
+              var data = el.getAttribute('data-tracking');
+              if (!data) {
+                return;
+              }
+              var d = data.match(/(.*)\|(.*)/);
+              ga('send', 'event', d[1], d[2]);
+            };
+        }(elementList[i]));
       }
     </script>
   </body>
