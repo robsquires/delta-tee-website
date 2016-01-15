@@ -159,11 +159,11 @@
               <h3 class="panel-title">Snapshots<span class="pull-right" style="font-style:italic">pdf</span></h3>
             </div>
             <div class="list-group">
-              <a href="downloads/D-T_snapshots_01_H.pdf" class="list-group-item list-group-item-snapshot">
+              <a data-tracking="snapshot|h" href="downloads/D-T_snapshots_01_H.pdf" class="list-group-item list-group-item-snapshot" download>
                 Hampshire &amp; Surrey
                 <span class="glyphicon glyphicon-download-alt pull-right"></span>
               </a>
-              <a href="downloads/D-T_snapshots_01_HC.pdf" class="list-group-item list-group-item-snapshot">
+              <a data-tracking="snapshot|hc" href="downloads/D-T_snapshots_01_HC.pdf" class="list-group-item list-group-item-snapshot" download>
                 Sussex, Kent &amp; Channel Islands
                 <span class="glyphicon glyphicon-download-alt pull-right"></span>
               </a>
@@ -223,8 +223,16 @@
               if (!data) {
                 return;
               }
-              var d = data.match(/(.*)\|?(.*)/);
-              ga('send', 'event', d[1], d[2] ? d[2] : 'link');
+              
+              var category = data,
+                  action = 'link',
+                  d;
+
+              if (d = data.match(/(.*)\|(.*)/)) {
+                category = d[1];
+                action = d[2];
+              };
+              ga('send', 'event', category, action);
             };
         }(elementList[i]));
       }
