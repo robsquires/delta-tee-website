@@ -5975,13 +5975,13 @@ button.list-group-item-snapshot {
   max-height: 14px; }
 
 .signature {
-  height: 110px;
+  height: 80px;
   margin: 0 auto; }
   .signature img {
     display: block;
-    padding-top: 25px;
+    padding-top: 10px;
     margin: 0 auto;
-    max-width: 200px; }
+    max-width: 210px; }
 
 .associations {
   overflow: hidden;
