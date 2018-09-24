@@ -106,6 +106,9 @@ $list-group-border: #ccc;
   }
 }
 
+.instagram-media-rendered {
+	min-width: 0px !important;
+}
 
 //
 //Thanks column
@@ -119,8 +122,8 @@ $list-group-border: #ccc;
 
 .profile {
   .profile-pic {
-    width: 150px;
-    margin: 30px auto;
+    width: 125px;
+    margin: 0px auto;
     display:block;
   }
 
@@ -187,7 +190,8 @@ $list-group-border: #ccc;
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 8px 10px;
   a {
     color: #8a6d3b;
@@ -206,3 +210,4 @@ $list-group-border: #ccc;
     font-size: 1.2em;
   }
 }
+
