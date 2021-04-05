@@ -15,7 +15,7 @@
   "license": "ISC",
   "homepage": "https://github.com/robsquires/delta-tee-website#readme",
   "dependencies": {
-    "bootstrap-sass": "^3.3.6",
+    "bootstrap-sass": "^3.4.1",
     "http-server": "^0.12.3",
     "node-sass": "^3.4.2"
   }
